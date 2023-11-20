@@ -1,0 +1,19 @@
+import array
+from array import*
+#defining a function
+def pairwise_swap(arr):
+  n=len(arr)
+  for i in range (0,n-1):
+   for j in range (0,n-i-1):
+      if arr[j]>arr[j+1]:
+       arr[j],arr[j+1]=arr[j+1],arr[j]
+
+#ending the defination 
+
+#defining the array
+
+arr1 = array('i',[100,99,58,45,34,21])
+
+#calling the function 
+pairwise_swap(arr1)
+print(arr1)
